@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "cwweishop", "http://localhost:53459", "{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53459"
+		Debug.AspNetCompiler.PhysicalPath = "..\cwweishop\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53459\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53459"
+		Release.AspNetCompiler.PhysicalPath = "..\cwweishop\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53459\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\cwweishop\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
