@@ -13,6 +13,7 @@
                     message('抱歉，商家不存在或是已经删除！', '', 'error');
                 }
                 
+			}
 				if (checksubmit('submit')) {
 					if (empty($_GP['merchantname'])) {
 						message('请输入商家名称！');
@@ -36,6 +37,7 @@
 						'mobile' => $_GP['mobile'],
 						'address' => $_GP['address'],
 						'displayorder' => intval($_GP['displayorder']),
+						'district' => intval($_GP['district']),
 						'status' => intval($_GP['status']),
 						'displayorder' => intval($_GP['displayorder']),
 						'description' => $_GP['description'],
@@ -95,7 +97,6 @@
                 
 					message('商品操作成功！', web_url('merchant', array('op' => 'post', 'id' => $id)), 'success');
 				}
-			}
             
         		include page('merchant');
             
