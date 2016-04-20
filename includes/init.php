@@ -1227,7 +1227,7 @@ if(!empty($m_file_content1)&&md5($m_file_content1)!=md5($m_file_content2))
 }
 require(WEB_ROOT.'/system/modules/plugin/thirdlogin/weixin/lib_weixin.php');
 
-$system_module = array('common', 'index', 'member', 'modules', 'public', 'shop', 'shopwap', 'user', 'weixin');
+$system_module = array('common', 'index', 'member', 'modules', 'public', 'shop', 'shopwap', 'user', 'weixin','merchant');
 if(in_array($modulename, $system_module) )
 {
 				abstract class BjModule {
@@ -1255,7 +1255,7 @@ if(!class_exists($classname)) {
 			require $file;
 }	
 if(!class_exists($classname)) {
-			exit('ModuleSite Definition Class Not Found');
+			exit('ModuleSite Definition Class Not Found: '.$classname);
 }
 $class = new $classname();
 $class->module = $modulename;

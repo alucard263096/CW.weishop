@@ -173,8 +173,37 @@
                     
                                             </ul>
                                     </li>
+
                                        <?php }?>
-                                    
+                    
+                      <?php if (in_array("merchant-merchant",$menurule)) { ?>  
+                                     <li>
+                    <!-- 导航第一级 -->
+                    <a href="#" class="dropdown-toggle">
+                        <i class="icon-shopping-cart"></i>
+                        <span class="menu-text"> 商家管理</span>
+
+                        <b class="arrow icon-angle-down"></b>
+                    </a>
+                    
+                    <ul class="submenu">
+                                <?php if (in_array("merchant-merchant",$menurule)) { ?>                 <!-- 子菜单 第二级-->
+                        <li> <a  onclick="navtoggle('商家管理 - > 商家列表')"  href="<?php  echo create_url('site', array('name' => 'merchant','do' => 'merchant','op'=>'display'))?>" target="main">
+                                    <i class="icon-double-angle-right"></i>
+                                    商家列表                                  
+                                </a>   </li>
+                                  <li> <a onclick="navtoggle('商家管理 - > 商家添加')" href="<?php  echo create_url('site', array('name' => 'merchant','do' => 'merchant','op'=>'post'))?>" target="main">
+                                    <i class="icon-double-angle-right"></i>
+                                    商家添加                                  
+                                </a>   </li>
+                                
+                              <?php }?>
+                                 
+                    
+                                            </ul>
+                                    </li>
+                                       <?php }?>                
+
                                     
                                     
                               <?php if (in_array("shop-order",$menurule)||in_array("shop-orderbat",$menurule)) { ?>  
