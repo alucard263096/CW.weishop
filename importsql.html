@@ -70,8 +70,8 @@
             var sql = "";
             for (i = 0; i < total; i++) {
                 if ($.trim(arr[i]["商家名称"]) != "") {
-                    sql += "insert into baijiacms_merchant (no,name,contact,mobile,district,business_loc,address,lat,lng,content,createtime) values ";
-                    sql += "('" + arr[i]["商家代号"] + "','" + arr[i]["商家名称"] + "','" + arr[i]["联系人"] + "','" + arr[i]["联系电话"] + "','" +getDistrict(arr[i]["地区"]) + "','" + arr[i]["片区"] + "','" + arr[i]["地址"] + "','" + arr[i]["lat"] + "','" + arr[i]["lng"] + "','',0);";
+                    sql += "insert into baijiacms_merchant (no,name,contact,mobile,district,business_loc,address,lat,lng,content,createtime,status) values ";
+                    sql += "('" + arr[i]["商家代号"] + "','" + arr[i]["商家名称"] + "','" + arr[i]["联系人"] + "','" + arr[i]["联系电话"] + "','" +getDistrict(arr[i]["地区"]) + "','" + arr[i]["片区"] + "','" + arr[i]["地址"] + "','" + arr[i]["lat"] + "','" + arr[i]["lng"] + "','',0,1);";
                     sql += "\r\n";
                 }
             }
