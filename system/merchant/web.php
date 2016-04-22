@@ -5,6 +5,10 @@ class merchantAddons  extends BjModule {
 	{
 		$this->__web(__FUNCTION__);
 	}
+	public function do_upload()
+	{
+		$this->__web(__FUNCTION__);
+	}
 	
 }
 
