@@ -52,6 +52,21 @@
 													 <input type="text" name="address" id="address" maxlength="100" class="span7"  value="<?php  echo $item['address'];?>" />
 										</div>
 		</div>
+ <div class="form-group">
+										<label class="col-sm-2 control-label no-padding-left" > 商业圈：</label>
+
+										<div class="col-sm-9">
+													 <input type="text" name="business_loc" id="business_loc" maxlength="100" class="span7"  value="<?php  echo $item['business_loc'];?>" />
+										</div>
+		</div>
+ <div class="form-group">
+										<label class="col-sm-2 control-label no-padding-left" > 坐标：</label>
+
+										<div class="col-sm-9">
+													 <input type="text" name="lat" id="lat" maxlength="100" class="span7"  value="<?php  echo $item['lat'];?>" placeholder="Lat" />
+													 <input type="text" name="lng" id="lng" maxlength="100" class="span7"  value="<?php  echo $item['lng'];?>" placeholder="lng" />
+										</div>
+		</div>
 
 
  <div class="form-group">

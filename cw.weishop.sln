@@ -24,6 +24,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "cwweishop", "http://localho
 		SlnRelativePath = "..\cwweishop\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,12 @@ Global
 		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{DC508AA3-BD9A-4FDA-B519-1700A4F6D893}.Release|x86.ActiveCfg = Debug|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF470F9B-0C0F-4AA6-935A-8353E2726CEB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

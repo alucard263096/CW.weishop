@@ -36,6 +36,9 @@
 						'contact' => $_GP['contact'],
 						'mobile' => $_GP['mobile'],
 						'address' => $_GP['address'],
+						'business_loc' => $_GP['business_loc'],
+						'lat' => $_GP['lat'],
+						'lng' => $_GP['lng'],
 						'displayorder' => intval($_GP['displayorder']),
 						'district' => intval($_GP['district']),
 						'status' => intval($_GP['status']),
@@ -134,5 +137,13 @@
 
              include page('merchant_list');
         } elseif ($operation == 'delete') {
+			$id = intval($_GP['id']);
+            $row = mysqld_select("SELECT id FROM " . table('merchant') . " WHERE id = :id", array(':id' => $id));
+            if (empty($row)) {
+                message('抱歉，商品不存在或是已经被删除！');
+            }
+            //修改成不直接删除，而设置deleted=1
+            mysqld_update("merchant", array("deleted" => 1), array('id' => $id));
 
+            message('删除成功！', 'refresh', 'success');
         }
